@@ -1,0 +1,156 @@
+@page { size: A4; margin: 0; }
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+body {
+  background: #2a2622;
+  color: #1a120c;
+  font-family: "Old Standard TT", "Times New Roman", serif;
+  font-size: 12pt;
+  line-height: 1.25;
+}
+
+.toolbar {
+  width: min(210mm, calc(100% - 24px));
+  margin: 16px auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #ece6dc;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+.toolbar a, .toolbar button {
+  font: inherit;
+  color: #1a1612;
+  background: #ece6dc;
+  border: 0;
+  text-decoration: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto 16px;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  background: #8f1a14;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.leaf {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 16mm 8mm 14mm 12mm;
+  background: #f4efe4;
+}
+
+.kicker {
+  margin: 6mm 0 0;
+  text-align: center;
+  font-size: 12pt;
+}
+
+h1 {
+  margin: 7mm 0 12mm;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34pt;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+  text-transform: uppercase;
+  line-height: 0.95;
+}
+
+.cast {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 1mm 0 10mm;
+}
+
+.cast li {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) auto minmax(0, 1.08fr);
+  column-gap: 2mm;
+  align-items: start;
+  margin: 0;
+}
+
+.role {
+  font-size: 13.5pt;
+  line-height: 1.2;
+}
+
+.dash {
+  font-size: 13.5pt;
+  line-height: 1.2;
+}
+
+.part {
+  font-size: 11.5pt;
+  line-height: 1.25;
+}
+
+.foot {
+  margin: auto 0 0;
+  padding-top: 6mm;
+  font-size: 12pt;
+}
+
+.wing {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 52mm 8mm 18mm;
+  text-align: center;
+  color: #f8f3ea;
+}
+
+.wing-title {
+  margin: 0 0 9mm;
+  font-size: 14pt;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  text-transform: uppercase;
+}
+
+.credits {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 8mm 0 0;
+}
+
+.credits strong {
+  display: block;
+  font-weight: 400;
+  font-size: 14pt;
+  line-height: 1.15;
+}
+
+.credits span {
+  display: block;
+  margin-top: 0.6mm;
+  font-size: 11pt;
+  line-height: 1.25;
+}
+
+@media print {
+  body { background: #fff; }
+  .toolbar { display: none !important; }
+  .page { margin: 0; box-shadow: none; }
+}

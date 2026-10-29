@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Закулисье — барная карта</title>
+  <meta name="theme-color" content="#f3ecdf">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant+Garamond:wght@500;600&family=PT+Mono&family=PT+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="menu">
+    <header class="mast">
+      <p class="issue">барная карта</p>
+      <div class="spread">
+        <img src="decor-masks.jpg" alt="">
+        <img class="spread-play" src="decor-masks.jpg" alt="">
+      </div>
+      <h1>Закулисье</h1>
+      <p class="hint">Нажми на карточку, чтобы открыть рецепт</p>
+    </header>
+    <div id="menu" class="cards"></div>
+    <h2 class="section">Классика</h2>
+    <div id="classics" class="cards"></div>
+  </main>
+
+  <dialog id="recipe">
+    <div class="sheet">
+      <button id="close" type="button" class="close">Закрыть</button>
+      <div id="recipe-body"></div>
+    </div>
+  </dialog>
+
+  <script src="recipes.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

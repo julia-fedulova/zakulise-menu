@@ -1,7 +1,7 @@
 window.RECIPES = [
   {
-    id: "shepot-teney",
-    name: "Шепот теней",
+    id: "debyut",
+    name: "Дебют",
     composition: "кордиал «роза / ревень / грейпфрут», джин, тоник",
     ingredients: [
       ["40 мл", "Clavis «Роза / Ревень / Грейпфрут»"],
@@ -15,8 +15,8 @@ window.RECIPES = [
     ]
   },
   {
-    id: "po-tu-storonu",
-    name: "По ту сторону",
+    id: "pod-maskoy",
+    name: "Под маской",
     composition: "кордиал «юдзу / бамбук / лемонграсс», джин, содовая",
     ingredients: [
       ["40 мл", "Clavis «Юдзу / Бамбук / Лемонграсс»"],
@@ -30,8 +30,8 @@ window.RECIPES = [
     ]
   },
   {
-    id: "ovaciya",
-    name: "Овация",
+    id: "posledniy-akt",
+    name: "Последний акт",
     composition: "кордиал «клюква / цитрус / розмарин», водка, тоник",
     ingredients: [
       ["45 мл", "Clavis «Клюква / Цитрус / Розмарин»"],
@@ -45,8 +45,8 @@ window.RECIPES = [
     ]
   },
   {
-    id: "debyut-dyavola",
-    name: "Дебют дьявола",
+    id: "razvyazka",
+    name: "Развязка",
     composition: "кордиал «васильки / черёмуха / голубика», водка, содовая",
     ingredients: [
       ["40 мл", "Clavis «Васильки / Черёмуха / Голубика»"],
@@ -60,8 +60,8 @@ window.RECIPES = [
     ]
   },
   {
-    id: "bez-antrakta",
-    name: "Без антракта",
+    id: "ovaciya",
+    name: "Овация",
     composition: "кордиал «манго / маракуйя / кокос», водка, игристое",
     ingredients: [
       ["45 мл", "Clavis «Манго / Маракуйя / Кокос»"],
@@ -76,8 +76,8 @@ window.RECIPES = [
     ]
   },
   {
-    id: "posledniy-akt",
-    name: "Последний акт",
+    id: "zanaves",
+    name: "Занавес",
     composition: "кордиал «саган дайля / ваниль / зелёное яблоко», виски, содовая",
     ingredients: [
       ["40 мл", "Clavis «Саган дайля / Ваниль / Зелёное яблоко»"],
